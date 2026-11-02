@@ -47,11 +47,11 @@ while True:
         if user_choice == computer_choice:
             print("DRAW!")
         elif user_choice == 0 and computer_choice ==2:
-            print("You win")
+            print("YOU WIN")
         elif user_choice == 2 and computer_choice == 0:
-            print("You Lose")
+            print("You LOSE")
         elif user_choice>computer_choice:
-            print("You win")
+            print("YOU WIN")
         else:
             print("YOU LOSE")
     else:
@@ -60,4 +60,5 @@ while True:
     play_again = input("Wanna Play Another Match??? (Y/N)\n").lower()
     if play_again != "y":
         print("Thanks for playing")
+
         break
