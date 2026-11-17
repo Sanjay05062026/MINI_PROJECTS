@@ -45,6 +45,7 @@ while not game_over:
     if lives == 0:
         game_over = True
         print(f"The correct word is {chosen_word}")
+        print(f"Letters you guessed: {', '.join(guessed_letters)}")
         print(lose_logo)
     elif "_" not in display:
         game_over = True
