@@ -12,7 +12,6 @@ correct_letters = []
 guessed_letters = []
 
 while not game_over:
-    # Show lives and the word so far at the start of every round
     print(f"\n------------------- LIVES LEFT : {lives} -------------------")
     print(display)
     guess = input("Guess a letter\n").lower()
@@ -41,7 +40,6 @@ while not game_over:
 
     print(stages[6 - lives])
 
-    # Win / lose messages come last, after the final drawing
     if lives == 0:
         game_over = True
         print(f"The correct word is {chosen_word}")
@@ -49,5 +47,5 @@ while not game_over:
         print(lose_logo)
     elif "_" not in display:
         game_over = True
-        print(display)
+        print(f"You've gueesed the word \"{display}\"")
         print(win_logo)
